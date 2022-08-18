@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <form class="calculatorform" name="calculatorform">
+            <div class="screen">
+                <input type="text" name="screen" readonly="readonly">
+            </div>
+            <div class="btn">
+                <input type="button" class="clearbtn "value="Clear" name="clear" onclick="Clear()">
+            </div>
+            <div class="btn">
+                <input type="button" class="numbers" value="1" name="num1" onclick="val(this)">
+                <input type="button" class="numbers" value="2" name="num2" onclick="val(this)">
+                <input type="button" class="numbers" value="3" name="num3" onclick="val(this)">
+                <input type="button" class="numbers" value="+" name="plus" onclick="val(this)">
+            </div>
+            <div class="btn">
+                <input type="button" class="numbers" value="4" name="num4" onclick="val(this)">
+                <input type="button" class="numbers" value="5" name="num5" onclick="val(this)">
+                <input type="button" class="numbers" value="6" name="num6" onclick="val(this)">
+                <input type="button" class="numbers" value="-" name="minus" onclick="val(this)">
+            </div>
+            <div class="btn">
+                <input type="button" class="numbers" value="7" name="num7" onclick="val(this)">
+                <input type="button" class="numbers" value="8" name="num8" onclick="val(this)">
+                <input type="button" class="numbers" value="9" name="num9" onclick="val(this)">
+                <input type="button" class="numbers" value="*" name="multiply" onclick="val(this)">
+            </div>
+            <div class="btn">
+                <input type="button" class="numbers" value="0" name="num0" onclick="val(this)">
+                <input type="button" class="numbers" value="/" name="division" onclick="val(this)">
+                <input type="button" class="numbers" value="=" name="equalsto" onclick="calculate()">
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
